@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            color: rgb(204, 204, 255);
+            margin: 0;
+            padding: 0;
+            background: url('https://png.pngtree.com/background/20211217/original/pngtree-fluid-gradient-dark-blue-background-picture-image_1593596.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .heading {
+            margin-bottom: 20px;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            width: 80%; 
+            max-width: 1200px; 
+            height: 450px;
+            align-items: center;
+        }
+
+        .game {
+            position: relative;
+            text-align: center;
+            width: 20%;
+            transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .game img {
+            width: 80%;
+            height: 450px; 
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid rgb(123, 72, 189);
+        }
+
+        .game:hover {
+            width: 80%; 
+            height: 50%; 
+        }
+
+        .game p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: rgb(204, 204, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Top 4 Most Played Games</h1>
+    </div>
+    <div class="container">
+        <div class="game">
+            <a href="https://www.minecraft.net/en-us" target="_blank">
+                <img src="https://www.minecraft.net/content/dam/games/minecraft/key-art/Vanilla-PMP_Collection-Carousel-0_Trails-and-Tales_1280x768.jpg" alt="Minecraft">
+            </a>
+            <p>Minecraft</p>
+        </div>
+        <div class="game">
+            <a href="https://www.rockstargames.com/gta-v" target="_blank">
+                <img src="https://w0.peakpx.com/wallpaper/829/888/HD-wallpaper-grand-theft-auto-v-los-santos-game-gta-gtav.jpg" alt="GTA V">
+            </a>
+            <p>GTA V</p>
+        </div>
+        <div class="game">
+            <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank">
+                <img src="https://assets1.ignimgs.com/2016/10/18/red-dead-redemption-2-buttonjpg-f9ad35.jpg?width=300&crop=1%3A1%2Csmart&auto=webp" alt="Red Dead Redemption 2">
+            </a>
+            <p>Red Dead Redemption 2</p>
+        </div>
+        <div class="game">
+            <a href="https://www.pubgmobile.com/en-US/home.shtml" target="_blank">
+                <img src="https://seagm-media.seagmcdn.com/material/945.jpg?x-oss-process=image/resize,w_480" alt="PUBG">
+            </a>
+            <p>PUBG</p>
+        </div>
+    </div>
+</body>
+</html>
